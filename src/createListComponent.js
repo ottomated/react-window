@@ -306,7 +306,8 @@ export default function createListComponent({
         useIsScrolling,
         width,
         onMouseDown,
-        onMouseUp
+        onMouseUp,
+        onMouseOut
       } = this.props;
       const { isScrolling } = this.state;
 
@@ -349,6 +350,7 @@ export default function createListComponent({
           onScroll,
           onMouseDown,
           onMouseUp,
+          onMouseOut,
           ref: this._outerRefSetter,
           style: {
             position: 'relative',
